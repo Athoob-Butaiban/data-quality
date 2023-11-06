@@ -1,0 +1,11 @@
+rule:
+  - column: Customer_Age
+    range: [25, 60]
+  - column: Credit_Limit
+    range: [3000, 10000]
+  - column: Education_Level
+    string_length: [0, 12]
+  - column: Total_Relationship_Count
+    range: [2, 4]
+  - column: Total_Revolving_Bal
+    range: [100, 1000]
