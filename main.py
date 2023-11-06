@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 from ydata_profiling import ProfileReport
-# import time
 import http.server
 import socketserver
 import webbrowser
@@ -9,7 +8,7 @@ import yaml
 import sys
 
 
-print('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \n')
+
 # encoding
 if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
@@ -38,7 +37,6 @@ for rule_entry in custom_config['rule']:
 
 # profile report
 profile = ProfileReport(df, title= "Profiling Report") # this function doesn't accept other params than the used 
-print('********************************** \n')
 profile.to_widgets()
 profile.to_notebook_iframe()
 

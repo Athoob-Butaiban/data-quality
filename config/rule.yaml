@@ -1,6 +1,6 @@
 rule:
   - column: Customer_Age
-    range: [25, 60]
+    range: [25, 65]
   - column: Credit_Limit
     range: [3000, 10000]
   - column: Education_Level
