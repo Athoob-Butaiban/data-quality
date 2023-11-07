@@ -21,7 +21,7 @@ with open('C:/Users/athoo/PIFSS/data-quality/config/rule.yaml','r') as rule:
 
 # loading dataset 
 df = pd.read_csv(r'C:/Users/athoo/PIFSS/data-quality/inputs/BankChurners.csv')
-
+print(df.columns)
 
 # Apply custom validation rules based on the rule.yaml file
 for rule_entry in custom_config['rule']:
@@ -60,9 +60,3 @@ webbrowser.open(f'http://localhost:8000/outputs/profile-report.html')
 # Start the local web server
 print(f"Serving at port 8000")
 httpd.serve_forever()
-
-
-
-
-
-
